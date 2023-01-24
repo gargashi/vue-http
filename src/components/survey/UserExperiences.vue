@@ -42,7 +42,7 @@ export default {
     loadExperiences() {
       this.isLoading = true;
       this.error = null;
-      fetch("https://vue-http-8ae97-default-rtdb.firebaseio.com/surveys.json", {
+      fetch("/surveys.json", {  // Add firebase server url and then surveys.json
         method: "GET",
       })
         .then((response) => {

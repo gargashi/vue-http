@@ -74,7 +74,7 @@ export default {
       //   rating: this.chosenRating,
       // });
       this.error = null;
-      fetch("https://vue-http-8ae97-default-rtdb.firebaseio.com/surveys.json", {
+      fetch("/surveys.json", {  // Add firebase server url and then surveys.json
         method: "POST",
         headers: {
           "Content-Type": "application/json",
